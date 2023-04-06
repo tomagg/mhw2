@@ -1,0 +1,100 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    align-content: space-between;
+    margin-top:10px;
+}
+
+.choice-grid div
+{
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 32.5%;
+margin-bottom: 20px;
+background-color: #f4f4f4;
+border:solid 1px #dcdcdc;
+padding: 10px;
+}
+
+.choice-grid div img
+{
+    width: 100%;
+}
+
+.choice-grid div .checkbox
+{
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+
+.question-name
+{
+    background-image: url("./images/sfondo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.nonselezionato
+{
+    opacity: 0.6;
+}
+.result
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.result h1
+{
+   margin:0px;
+}
+.result p
+{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+button
+{
+    background-color: #cecece;
+    height: 50px;
+    margin-bottom: 20px;
+}
+button:hover
+{
+    background-color: #e0e0e0;
+}
+
+.hidden
+{
+    display: none;
+}
+
+@media (max-width: 700px){
+
+    article{
+        width: 95%;
+    }
+  
+    header div span{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 500px){
+    .choice-grid div{
+        width: 49%;
+    }
+}
